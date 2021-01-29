@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(reverseWord("Vivian"));
         primeNumbers();
-        getUp(7);
+        getUp(3);
         // String myString = "perscholas";
         // String random = new StringBuilder(myString).reverse().toString();
         // System.out.println(random);
@@ -42,11 +42,14 @@ public class Main {
 
     }
 
-    static void getUp (boolean squawking, int currentHour){
+    static void getUp (int currentHour){
+        boolean isSquawking = false;
         if ( currentHour < 6 || currentHour > 22 ){
-            System.out.println("Get up");
+            isSquawking = true;
+            System.out.println(isSquawking);
         } else {
-            System.out.println("keep sleeping");
+            isSquawking = false;
+            System.out.println(isSquawking);
         }
     }
 
